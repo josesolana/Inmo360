@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inmo360"
+    style="@style/AppTheme"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="13dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/AppTheme"
+    tools:context="unicen.inmobiliaria.NothingSelectedSpinnerAdapter">
+
+    <TextView
+        android:id="@+id/SpecialSpinner"
+        style="?android:attr/spinnerItemStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/material_deep_teal_500"
+        android:ellipsize="marquee"
+        android:entries="@string/spin_ciudad_sin_conexion"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="bottom"
+        android:popupBackground="@color/material_deep_teal_500"
+        android:singleLine="true"
+        android:spinnerMode="dialog"
+        android:text="@string/title_activity_nothing_selected_spinner_adapter"
+        android:textAlignment="center"
+        android:textColor="@color/hint_foreground_material_dark"
+        android:textSize="18sp"
+        android:theme="@style/AppTheme"
+        android:transitionGroup="true" />
+
+</RelativeLayout>

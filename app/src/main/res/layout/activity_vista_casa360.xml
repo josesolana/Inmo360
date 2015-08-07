@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="unicen.inmobiliaria.VistaCasa360"
+    tools:layout="@layout/activity_maps">
+
+    <fragment
+        android:id="@+id/vistacasa360"
+        android:name="com.google.android.gms.maps.StreetViewPanoramaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/activity_tab_descripcion" />
+
+    <ImageView
+        android:id="@+id/img_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:contentDescription="@string/txt_star_Fav"
+        android:onClick="setFavorito"
+        android:src="@drawable/abc_btn_rating_star_off_mtrl_alpha" />
+</RelativeLayout>

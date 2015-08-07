@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Inmobiliaria</string>
+    <string name="scan_qr">Escanear QR</string>
+    <string name="action_settings">Configuración</string>
+    <string name="title_activity_qr">QR</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="btt_Buscar">Buscar</string>
+    <string name="img_LogoApp">LogoApp</string>
+    <string name="txt_star_Fav">¿Favorito?</string>
+    <string name="app_Fav">Favorito</string>
+    <string name="txt_dialog_ciudad">Elija una ciudad\nPor Favor</string>
+    <string name="txt_prompt_ciudad">¿Donde desea vivir?</string>
+    <string name="txt_prompt_inmo">Elija Inmobiliaria</string>
+    <string name="spin_ciudad_sin_conexion">No hay Conección</string>
+    <string name="title_activity_nothing_selected_spinner_adapter">¿Donde desea vivir?</string>
+    <string name="title_activity_contenedor_street">ContenedorStreet</string>
+
+    <string name="title_activity_favoritos">Favoritos</string>
+
+    <string name="title_activity_vista_barrio">VistaBarrio</string>
+    <string name="title_activity_descripcion_vivienda">DescripcionVivienda</string>
+    <string name="title_activity_tab_descripicion">Descripción del Inmueble</string>
+    <string name="titulo_descripcion">DESCRIPCIÓN</string>
+    <string name="title_activity_vista_casa360">VistaCasa360</string>
+    <string name="img_logo_inmo">ImagenLogoInmobiliaria</string>
+    <string name="arrow">arrow</string>
+</resources>

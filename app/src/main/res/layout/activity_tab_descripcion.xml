@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_deep_teal_200"
+    android:divider="@drawable/abc_list_divider_mtrl_alpha"
+    android:dividerPadding="@dimen/abc_action_bar_icon_vertical_padding_material"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="unicen.inmobiliaria.TabDescripcion">
+
+    <LinearLayout
+        style="@style/AppTheme"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_weight=".005"
+        android:divider="@drawable/abc_list_pressed_holo_dark"
+        android:orientation="horizontal"
+        android:theme="@style/AppTheme">
+
+        <Spinner
+            android:id="@+id/spin_inmo"
+            style="@style/AppTheme"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25"
+            android:background="@color/material_blue_grey_950"
+            android:dropDownWidth="fill_parent"
+            android:gravity="top|right"
+            android:nestedScrollingEnabled="false"
+            android:popupBackground="@color/material_blue_grey_950"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center" />
+
+        <ImageView
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".75"
+            android:background="@color/material_blue_grey_800"
+            android:contentDescription="@string/arrow"
+            android:src="@drawable/arrowspinner"
+            android:theme="@style/AppTheme" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/desc_casa"
+        style="@style/AppTheme"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2dp"
+        android:layout_weight=".33"
+        android:theme="@style/AppTheme">
+
+        <ListView
+            android:id="@+id/lv_Descripcion"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_blue_grey_800"
+            android:choiceMode="singleChoice"
+            android:divider="@android:drawable/divider_horizontal_dim_dark"
+            android:scrollingCache="false"
+            android:smoothScrollbar="false"
+            android:textAlignment="center"
+            android:theme="@style/AppTheme" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/desc_inmo"
+        style="@style/AppTheme"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2dp"
+        android:layout_weight=".40"
+        android:divider="@drawable/abc_list_longpressed_holo"
+        android:gravity="left|bottom|right"
+        android:orientation="horizontal"
+        android:theme="@style/AppTheme">
+
+        <ImageView
+            android:id="@+id/img_logo_inmo"
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight=".80"
+            android:background="@color/material_deep_teal_500"
+            android:contentDescription="@string/img_logo_inmo"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/inmobiliaria"
+            android:theme="@style/AppTheme"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/lv_inmo"
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight=".20"
+            android:background="@color/material_blue_grey_950"
+            android:divider="@android:drawable/divider_horizontal_dark"
+            android:theme="@style/AppTheme" />
+    </LinearLayout>
+
+</LinearLayout>
