@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Inmobiliaria</string>
+    <string name="app_name">INMO360</string>
     <string name="scan_qr">Escanear QR</string>
     <string name="action_settings">Configuración</string>
     <string name="title_activity_qr">QR</string>

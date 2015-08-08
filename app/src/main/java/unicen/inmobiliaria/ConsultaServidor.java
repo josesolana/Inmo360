@@ -80,6 +80,7 @@ public class ConsultaServidor extends AsyncTask<ContentValues, Void, StringBuffe
                 if (cache.toString().contains("Warning") || cache.toString().contains("error")) {
                     cache.delete(0, cache.length());
                 }
+                cachear();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -113,7 +114,6 @@ public class ConsultaServidor extends AsyncTask<ContentValues, Void, StringBuffe
 
     protected void onPostExecute(StringBuffer response) {
         super.onPostExecute(response);
-        cachear();
         padre.respuestaServer(response);
         ruedita.dismiss();
     }
@@ -143,7 +143,8 @@ public class ConsultaServidor extends AsyncTask<ContentValues, Void, StringBuffe
                     cache.append(line);
                 }
                 input.close();
-            }
+            } else
+                cacheFile.delete();
         } catch (IOException e) {
             e.printStackTrace();
         }

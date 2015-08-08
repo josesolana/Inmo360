@@ -46,7 +46,7 @@ public class Favoritos extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, final View view,
                                     int position, long id) {
                 final String item = (String) parent.getItemAtPosition(position);
-                view.animate().setDuration(750).alpha(0.5f)
+                view.animate().setDuration(750).alpha(0.25f)
                         .withEndAction(new Runnable() {
                             @Override
                             public void run() {
@@ -54,7 +54,7 @@ public class Favoritos extends AppCompatActivity {
                                 i.putExtra("Título", item.substring(0, item.indexOf(",")).trim());
                                 i.putExtra("Ciudad", item.substring(item.indexOf(",") + 1).trim());
                                 startActivity(i);
-                                view.animate().alpha(0);
+                                view.animate().setDuration(250).alpha(0);
                                 view.animate().alpha(1);
 
                             }

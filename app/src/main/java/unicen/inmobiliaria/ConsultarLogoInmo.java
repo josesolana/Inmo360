@@ -14,7 +14,7 @@ import java.io.InputStream;
 
 public class ConsultarLogoInmo extends AsyncTask<Void, Void, Bitmap> {
 
-    private final static String URL = "http://inmo360.esy.es/php/";
+    private final static String URL = "http://inmo360.esy.es/logo/";
     private ImageView bmImagen;
     private String path;
     private String nombreFoto;

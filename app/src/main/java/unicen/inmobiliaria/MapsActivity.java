@@ -49,9 +49,7 @@ public class MapsActivity extends AsyncRespuesta implements GoogleMap.OnInfoWind
     private void setUpMapIfNeeded() {
         // Do a null check to confirm that we have not already instantiated the map.
         if (mMap == null) {
-            // Try to obtain the map from the SupportMapFragment.
             mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
-            // Check if we were successful in obtaining the map.
             if (mMap != null) {
                 setUpMap();
             }
@@ -67,6 +65,7 @@ public class MapsActivity extends AsyncRespuesta implements GoogleMap.OnInfoWind
         if (s.length() == 0)
             Toast.makeText(this, "No existen propiedades.\nBusque en otra localidad", Toast.LENGTH_LONG).show();
         else {
+            mMap.clear();
             while (s.length() != 0)
                 try {
                     crearMarker(toJson(s));
